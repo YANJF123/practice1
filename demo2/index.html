@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo2</title>
+
+    <link rel="stylesheet" href="css/demo2.css">
+</head>
+<body>
+<div class="gd">
+    <div class="layout">
+        <div class="page-wrap fullpage-wrapper gd1" >
+
+            <!--page 1-->
+            <div class="section page page1 fp-section fp-table active" data-anchor="page1" style="">
+                <div class="fp-tableCell">
+                    <div class="">
+                        <img src="image/1.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <!--page 2-->
+            <div class="section page page2 fp-section fp-table" data-anchor="page1" style="">
+                <div class="fp-tableCell">
+                    <div class="">
+                        <img src="image/2.jpg" >
+                    </div>
+                </div>
+            </div>
+
+            <!--page 3-->
+            <div class="section page page3 fp-section fp-table" data-anchor="page1" style="">
+                <div class="fp-tableCell">
+                    <div class="">
+                        <img src="image/3.jpg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+<script>
+    $(function () {
+        $('.page-wrap').fullpage({
+            //sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
+            'navigation': true,
+            'navigationPosition': 'left',
+            //'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
+            afterLoad: function (anchorLink, index) {
+
+                //alert(index);
+                if (index == 1) {
+                    $('.header').removeClass('header2');
+                }
+                if (index == 2) {
+                    $('.header').addClass('header2');
+                }
+                if (index == 3) {
+                    $('.header').removeClass('header2');
+                }
+                if (index == 4) {
+                    $('.header').removeClass('header2');
+                }
+                if (index == 5) {
+                    $('.header').addClass('header2');
+                }
+                if (index == 6) {
+                    $('.header').removeClass('header2');
+                }
+                if (index == 7) {
+                    $('.header').addClass('header2');
+                }
+                if (index == 8) {
+                    $('.header').addClass('header2');
+                }
+            },
+            onLeave: function (index, direction) {
+                /*if(index == '2'){
+                 $('.section2').find('p').delay(500).animate({
+                 left: '-120%'
+                 }, 1500, 'easeOutExpo');
+                 }
+                 if(index == '3'){
+                 $('.section3').find('p').delay(500).animate({
+                 bottom: '-120%'
+                 }, 1500, 'easeOutExpo');
+                 }
+                 if(index == '4'){
+                 $('.section4').find('p').fadeOut(2000);
+                 }*/
+            }
+        });
+    })
+</script>
+</body>
+</html>

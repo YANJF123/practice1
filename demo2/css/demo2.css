@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent; }
+
+.gd {
+  overflow: hidden;
+  height: 100%;
+  font-size: 96.97%; }
+
+.gd1 {
+  height: 100%;
+  position: relative;
+  touch-action: none;
+  -webkit-transform: translate3d(0px, -4000px, 0px);
+  transform: translate3d(0px, -4000px, 0px);
+  -webkit-transition: all 700ms ease;
+  transition: all 700ms ease; }
+  .gd1 img {
+    width: 99%; }
+
+/*# sourceMappingURL=demo2.css.map */
